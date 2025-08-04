@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>remote-notification</string>
+		<string>background-app-refresh</string>
+		<string>background-fetch</string>
+		<string>background-processing</string>
+	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia, incluso cuando la aplicación está en segundo plano.</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false></false>
+</dict>
+</plist>

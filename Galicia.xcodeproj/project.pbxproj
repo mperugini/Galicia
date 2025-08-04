@@ -29,9 +29,22 @@
 		81DDFDA02E3C20500005FE0E /* GaliciaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaliciaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		81DDFDF52E3C265C0005FE0E /* Exceptions for "Galicia" folder in "Galicia" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 81DDFD832E3C204E0005FE0E /* Galicia */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		81DDFD862E3C204E0005FE0E /* Galicia */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				81DDFDF52E3C265C0005FE0E /* Exceptions for "Galicia" folder in "Galicia" target */,
+			);
 			path = Galicia;
 			sourceTree = "<group>";
 		};
@@ -78,6 +91,7 @@
 				81DDFD862E3C204E0005FE0E /* Galicia */,
 				81DDFD992E3C20500005FE0E /* GaliciaTests */,
 				81DDFDA32E3C20500005FE0E /* GaliciaUITests */,
+				81DDFDFF2E3D5D650005FE0E /* Frameworks */,
 				81DDFD852E3C204E0005FE0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +104,13 @@
 				81DDFDA02E3C20500005FE0E /* GaliciaUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		81DDFDFF2E3D5D650005FE0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +133,10 @@
 			);
 			name = Galicia;
 			packageProductDependencies = (
+				81DDFE002E3D5D650005FE0E /* FirebaseAnalytics */,
+				81DDFE022E3D5D650005FE0E /* FirebaseAnalyticsCore */,
+				81DDFE042E3D5D650005FE0E /* FirebaseCrashlytics */,
+				81DDFE0C2E3D880B0005FE0E /* FirebaseMessaging */,
 			);
 			productName = Galicia;
 			productReference = 81DDFD842E3C204E0005FE0E /* Galicia.app */;
@@ -195,6 +220,9 @@
 			);
 			mainGroup = 81DDFD7B2E3C204E0005FE0E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				81DDFDF82E3D56B70005FE0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 81DDFD852E3C204E0005FE0E /* Products */;
 			projectDirPath = "";
@@ -395,16 +423,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Galicia/Galicia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6FBZPMB3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Galicia/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Galicia geofence";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia, incluso cuando la aplicación está en segundo plano.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,16 +457,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Galicia/Galicia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6FBZPMB3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Galicia/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Galicia geofence";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia, incluso cuando la aplicación está en segundo plano.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Esta aplicación necesita acceso a tu ubicación para detectar cuando entras y sales de las sucursales de Banco Galicia.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +598,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81DDFDF82E3D56B70005FE0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81DDFE002E3D5D650005FE0E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81DDFDF82E3D56B70005FE0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		81DDFE022E3D5D650005FE0E /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81DDFDF82E3D56B70005FE0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		81DDFE042E3D5D650005FE0E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81DDFDF82E3D56B70005FE0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		81DDFE0C2E3D880B0005FE0E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81DDFDF82E3D56B70005FE0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81DDFD7C2E3C204E0005FE0E /* Project object */;
 }

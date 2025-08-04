@@ -2,7 +2,7 @@
 //  GaliciaTests.swift
 //  GaliciaTests
 //
-//  Created by Mariano Peruginoi on 31/07/2025.
+//  Created by Mariano Perugini on 31/07/2025.
 //
 
 import Testing

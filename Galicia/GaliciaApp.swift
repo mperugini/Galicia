@@ -2,13 +2,15 @@
 //  GaliciaApp.swift
 //  Galicia
 //
-//  Created by Mariano Peruginoi on 31/07/2025.
+//  Created by Mariano Perugini on 31/07/2025.
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct GaliciaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
