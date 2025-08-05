@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "57A36EDD-82BF-4EB3-A2F0-6A0733535D63",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Galicia.xcodeproj",
+      "identifier" : "81DDFD832E3C204E0005FE0E",
+      "name" : "Galicia"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Galicia.xcodeproj",
+        "identifier" : "81DDFD952E3C20500005FE0E",
+        "name" : "GaliciaTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Galicia.xcodeproj",
+        "identifier" : "81DDFD9F2E3C20500005FE0E",
+        "name" : "GaliciaUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
